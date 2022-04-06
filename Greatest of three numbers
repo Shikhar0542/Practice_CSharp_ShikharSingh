@@ -1,6 +1,6 @@
 using System;
 					
-public class ifelse
+public class greatest
 {
 	public static void Main()
 	{
