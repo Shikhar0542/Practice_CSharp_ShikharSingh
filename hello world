@@ -1,6 +1,6 @@
 using System;
 					
-public class ifelse
+public class Start
 {
 	public static void Main()
 	{
