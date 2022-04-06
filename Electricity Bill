@@ -1,0 +1,30 @@
+using System;
+					
+public class bill
+{
+	public static void Main()
+	{
+		double amount=0.0D;
+		Console.WriteLine("Enter the number of units to calculate the bill");
+		int unit=Convert.ToInt32(Console.ReadLine());
+		if(unit<=50)
+		{
+			amount=unit*0.5;
+		}
+		else if(unit>50 && unit<=150)
+		{
+			amount=50*0.5+(unit-50)*0.75;
+		}
+		else if(unit>150 && unit<=250)
+		{
+			amount=50*0.5+100*0.75+(unit-150)*1.2;
+		}
+		else
+		{
+			amount=50*0.5+100*0.75+100*1.2+(unit-250)*1.5;
+		}
+		Console.WriteLine("We added 20% subcharges");
+		amount=amount+0.2*amount;
+		Console.WriteLine("Total amount= "+ amount);
+	}
+}
