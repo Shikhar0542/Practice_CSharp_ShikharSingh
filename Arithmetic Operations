@@ -1,0 +1,19 @@
+using System;
+					
+public class operations
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter two numbers to perform arithematic operations");
+		int a=Convert.ToInt32(Console.ReadLine());
+		int b=Convert.ToInt32(Console.ReadLine());
+		int c=a+b;
+		int d=a-b;
+		int e=a*b;
+		double f=Convert.ToDouble(a/b);
+		Console.WriteLine("Addition= "+c);
+		Console.WriteLine("Subtraction= "+d);
+		Console.WriteLine("Multiplication= "+e);
+		Console.WriteLine("Division= "+f);
+	}
+}
