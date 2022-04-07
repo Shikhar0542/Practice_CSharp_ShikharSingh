@@ -1,0 +1,42 @@
+using System;
+public class animal
+{
+	public string tails="Tails at their back";
+	public void display()
+	{
+		Console.WriteLine("All animals have one common thing which is "+tails);
+	}
+}
+public class dog: animal
+{
+	
+	public string pet="four legs, they can bark and are faithful animal of the planet";
+	public void show()
+	{
+		Console.WriteLine("Dogs have the speciality of "+pet);
+	}
+}
+public class special:dog
+{
+	string n;
+	public special(String name)
+	{
+		n=name;
+	}
+	public void print()
+	{
+		Console.WriteLine("This is my dog name: "+n+" .She is the beautiful dog.");
+	}
+}
+public class multi_level
+{
+	public static void Main()
+	{
+		special obj=new special("Raani");
+		obj.print();
+		obj.display();
+		dog ob=new dog();
+		ob.show();
+		Console.WriteLine("Dogs have "+ob.tails);
+	}
+}
