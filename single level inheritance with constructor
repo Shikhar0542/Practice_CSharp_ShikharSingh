@@ -1,0 +1,32 @@
+using System;
+public class school
+{
+	public string s="St. John's School D.L.W. Varanasi";
+	public void display()
+	{
+		Console.WriteLine("This is my school name: "+s);
+	}
+}
+public class children: school
+{
+	public children()
+	{
+		Console.WriteLine("Now this is place where you get all student details in school");
+	}
+	public String section="11-D1 and 12-D1";
+	public void show()
+	{
+		Console.WriteLine("This is the class and section i used to study= "+section);
+	}
+}
+public class single_level
+{
+	public static void Main()
+	{
+		children obj=new children();
+		Console.WriteLine("schhol= "+obj.s+" and concerned class and section= "+obj.section);
+		obj.show();
+		school ob=new school();
+		ob.display();
+	}
+}
