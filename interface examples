@@ -1,0 +1,26 @@
+using System;
+public interface car
+{
+void specific();
+void function();
+}
+public class maruti: car
+{
+	void specific()
+	{
+		Console.WriteLine("The car used to carry more passengers and can go in long drive");
+	}
+	void function()
+	{
+		Console.WriteLine("The car has four wheels and balance well and more safer than two wheelers");
+	}
+}
+public class piyo
+{
+	public static void Main()
+	{
+		maruti obj=new maruti();
+		obj.specific();
+		obj.function();
+	}
+}
