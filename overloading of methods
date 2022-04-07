@@ -1,0 +1,37 @@
+using System;
+public class calculator
+{
+	// this is used to calculate factorial
+	public int calculate(int n)
+	{
+		int i, prod=1;
+		for(i=1;i<=n;i++)
+		{
+			prod=prod*i;
+		}
+		return prod;
+	}
+	// this is used to calculate the percentage of subject marks out of total
+	public double calculate(double sm, double tm)
+	{
+		double perc=0.0;
+		perc=(sm/tm)*100;
+		return perc;	
+	}
+
+	public static void Main()
+	{
+		calculator obj=new calculator();
+		Console.WriteLine("enter the number to calculate its factorial");
+		int fact=Convert.ToInt32(Console.ReadLine());
+		int total=obj.calculate(fact);
+		Console.WriteLine("Factorial of given number= "+total);
+		Console.WriteLine("Enter the subject marks of hindi and english and total marks");
+		double hindi=Convert.ToDouble(Console.ReadLine());
+		double english=Convert.ToDouble(Console.ReadLine());
+		double full=Convert.ToDouble(Console.ReadLine());
+		Console.WriteLine(obj.calculate(hindi, full));
+		Console.WriteLine(obj.calculate(english, full));
+		
+	}
+}
