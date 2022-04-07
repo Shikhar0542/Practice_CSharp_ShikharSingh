@@ -1,0 +1,26 @@
+using System;
+					
+public class armstrong
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter any sentence to check palindrome");
+		string s=Console.ReadLine();
+		char[] c=s.ToCharArray();
+		int x=c.Length;
+		string s1="";
+		for(int i=(x-1);i>=0;i--)
+		{
+			s1=s1+c[i];
+		}
+		
+		if(s.Equals(s1))
+		{
+			Console.WriteLine("The given sentence is plaindrome");
+		}
+		else
+		{
+			Console.WriteLine("The given sentence is not plaindrome");
+		}
+	}
+}
