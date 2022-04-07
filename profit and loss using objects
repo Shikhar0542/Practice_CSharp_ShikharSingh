@@ -1,0 +1,36 @@
+using System;
+
+public class business
+{
+	int p,l;
+	double perc=0.0;
+	public void check(int cp, int sp)
+	{
+		if(cp>sp)
+		{
+			l=cp-sp;
+			perc=(l/cp)*100;
+			Console.WriteLine("Loss= "+l);
+			Console.WriteLine("Loss percentage= "+perc);
+		}
+		else
+		{
+			p=sp-cp;
+			perc=Convert.ToDouble((p/cp)*100);
+			Console.WriteLine("Profit= "+p);
+			Console.WriteLine("Profit Percentage= "+perc);
+		}
+		
+	}
+}
+public class armstrong
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter the cost price and selling price");
+		int cost=Convert.ToInt32(Console.ReadLine());
+		int sell=Convert.ToInt32(Console.ReadLine());
+		business obj=new business();
+		obj.check(cost, sell);
+	}
+}
