@@ -1,0 +1,25 @@
+using System;
+public abstract class colddrink
+{
+	public abstract void sip();
+	public void bottle()
+	{
+		Console.WriteLine("Cold drink are drink in bottles, cans, cups, glass");
+	}
+}
+public class pepsi: colddrink
+{
+	public override void sip()
+	{
+		Console.WriteLine("Cold drink are liquid. You have to drink not to eat it");
+	}
+}
+public class piyo
+{
+	public static void Main()
+	{
+		pepsi obj=new pepsi();
+		obj.bottle();
+		obj.sip();
+	}
+}
