@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+		
+public class almirah
+	{
+		public string name {get; set;}
+		public int kaksha {get; set;}
+		public char section {get; set;}
+		public int rollno {get; set;}
+	}
+public class Program
+{
+	public static void Main()
+	{
+		List<almirah> d=new List<almirah>();
+		for(int i=1;i<=4;i++)
+		{
+			Console.WriteLine("Enter your name, class, section and roll number in sequence");
+			string n=Console.ReadLine();
+			int c=Convert.ToInt32(Console.ReadLine());
+			char s=Convert.ToChar(Console.ReadLine());
+			int r=Convert.ToInt32(Console.ReadLine());
+			almirah a=new almirah();
+			a.name=n; a.kaksha=c; a.section=s; a.rollno=r;
+			d.Add(a);
+		}
+		foreach(almirah x in d)
+		{
+			Console.WriteLine("Name of the student: "+x.name);
+			Console.WriteLine("Current class: "+x.kaksha);
+			Console.WriteLine("Current section: "+x.section);
+			Console.WriteLine("Student roll no: "+x.rollno);
+			Console.WriteLine("******************************************");
+		}
+		
+	}
+}
