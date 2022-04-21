@@ -10,7 +10,7 @@ public class armstrong
 		int b=1;
 		int sum;
 		Console.Write(a+" "+b+" ");
-		for(int i=3;i<+n;i++)
+		for(int i=3;i<=n;i++)
 		{
 			sum=a+b;
 			Console.Write(sum+" ");
